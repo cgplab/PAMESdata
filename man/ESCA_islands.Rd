@@ -4,13 +4,13 @@
 \name{ESCA_islands}
 \alias{ESCA_islands}
 \title{Esophageal carcinoma}
-\format{A list of two vector of indexes (`hyper`- and `hypo`-methylated).}
+\format{A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).}
 \usage{
 ESCA_islands
 }
 \description{
-A list of informative CpG islands to be used with `compute_purity` from PAMES
+A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 package. Use with data from Bisulphite Sequencing after processing with
-`reduce_bs_data`.
+\code{\link[PAMES]{remap_bs_data}}.
 }
 \keyword{datasets}

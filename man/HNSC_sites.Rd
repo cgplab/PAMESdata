@@ -4,12 +4,12 @@
 \name{HNSC_sites}
 \alias{HNSC_sites}
 \title{Head and Neck squamous cell carcinoma}
-\format{A list of two vector of indexes (`hyper`- and `hypo`-methylated).}
+\format{A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).}
 \usage{
 HNSC_sites
 }
 \description{
-A list of informative CpG sites to be used with `compute_purity` from PAMES
-package. Use with data from Illumina BeadChip
+A list of informative CpG sites to be used with \code{\link[PAMES]{compute_purity}} from PAMES
+package. Use with data from Illumina BeadChip.
 }
 \keyword{datasets}

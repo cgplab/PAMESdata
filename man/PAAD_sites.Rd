@@ -4,13 +4,13 @@
 \name{PAAD_sites}
 \alias{PAAD_sites}
 \title{Pancreatic adenocarcinoma}
-\format{A list of two vector of indexes (`hyper`- and `hypo`-methylated).}
+\format{A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).}
 \usage{
 PAAD_sites
 }
 \description{
-A list of informative CpG sites to be used with `compute_purity` from PAMES
-package. Use with data from Illumina BeadChip
-`reduce_bs_data`.
+A list of informative CpG sites to be used with \code{\link[PAMES]{compute_purity}} from PAMES
+package. Use with data from Illumina BeadChip.
+\code{\link[PAMES]{remap_bs_data}}.
 }
 \keyword{datasets}

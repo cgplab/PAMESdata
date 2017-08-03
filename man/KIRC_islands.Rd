@@ -4,13 +4,13 @@
 \name{KIRC_islands}
 \alias{KIRC_islands}
 \title{Kidney renal clear cell carcinoma}
-\format{A list of two vector of indexes (`hyper`- and `hypo`-methylated).}
+\format{A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).}
 \usage{
 KIRC_islands
 }
 \description{
-A list of informative CpG islands to be used with `compute_purity` from PAMES
+A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 package. Use with data from Bisulphite Sequencing after processing with
-`reduce_bs_data`.
+\code{\link[PAMES]{remap_bs_data}}.
 }
 \keyword{datasets}
