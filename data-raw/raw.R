@@ -1,29 +1,29 @@
 library(dplyr)
 all_sites <- readRDS("data-raw/cpg_sites.RDS")
 all_islands <- readRDS("data-raw/cpg_islands.RDS")
-tumors <- sort(names(sites))
+tumors <- sort(names(all_sites))
 for (tumor in tumors){
-    hyper <- all_sites[[tumor]] %>%
-        filter(type=="hyper" & n <= 10) %>%
-        select(index) %>%
+    hyper_sites <- all_sites[[tumor]] %>%
+        dplyr::filter(type=="hyper" & n <= 10) %>%
+        dplyr::select(index) %>%
         unlist(use.names=F)
-    hypo <- all_sites[[tumor]] %>%
+    hypo_sites <- all_sites[[tumor]] %>%
         filter(type=="hypo" & n <= 10) %>%
         select(index) %>%
         unlist(use.names=F)
-    site <- list(hyper, hypo)
-    assign(sprintf("%s_sites", tumor), site)
+    sites <- list(hyper=hyper_sites, hypo=hypo_sites)
+    assign(sprintf("%s_sites", tumor), sites)
 
-    hyper <- all_islands[[tumor]] %>%
+    hyper_islands <- all_islands[[tumor]] %>%
         filter(type=="hyper" & n <= 10) %>%
         select(index) %>%
         unlist(use.names=F)
-    hypo <- all_islands[[tumor]] %>%
+    hypo_islands <- all_islands[[tumor]] %>%
         filter(type=="hypo" & n <= 10) %>%
         select(index) %>%
         unlist(use.names=F)
-    site <- list(hyper, hypo)
-    assign(sprintf("%s_islands", tumor), site)
+    islands <- list(hyper=hyper_islands, hypo=hypo_islands)
+    assign(sprintf("%s_islands", tumor), islands)
 }
 devtools::use_data(overwrite=T,
     BLCA_sites,
