@@ -3,7 +3,7 @@
 PAMESdata
 =========
 
-PAMESdata provides a set of CpG sites and CpG islands generated with our R package [PAMES](https://github.com/cgplab/PAMESdata) exploiting public data from [TCGA](https://portal.gdc.cancer.gov/). The following cancer types have been analyzed:
+PAMESdata provides a set of CpG sites and CpG islands generated with our R package [PAMES](https://github.com/cgplab/PAMES) exploiting public data from [TCGA](https://portal.gdc.cancer.gov/). The following cancer types have been analyzed:
 
 -   BLCA
 -   BRCA
