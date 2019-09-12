@@ -82,7 +82,7 @@
 #'
 #' A list of informative CpG sites to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Illumina BeadChip.
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "PAAD_sites"
@@ -116,7 +116,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "BLCA_islands"
@@ -125,7 +125,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "BRCA_islands"
@@ -134,7 +134,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "COAD_islands"
@@ -143,7 +143,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "ESCA_islands"
@@ -152,7 +152,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "HNSC_islands"
@@ -161,7 +161,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "KIRC_islands"
@@ -170,7 +170,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "KIRP_islands"
@@ -179,7 +179,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "LIHC_islands"
@@ -188,7 +188,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "LUAD_islands"
@@ -197,7 +197,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "LUSC_islands"
@@ -206,7 +206,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "PAAD_islands"
@@ -215,7 +215,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "PRAD_islands"
@@ -224,7 +224,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "THCA_islands"
@@ -233,7 +233,7 @@
 #'
 #' A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 #' package. Use with data from Bisulphite Sequencing after processing with
-#' \code{\link[PAMES]{map_to_islands}}.
+#' \code{\link[PAMES]{reduce_to_regions}}.
 #'
 #' @format A list of two vector of indexes (\code{hyper}- and \code{hypo}-methylated).
 "UCEC_islands"

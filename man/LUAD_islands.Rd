@@ -11,6 +11,6 @@ LUAD_islands
 \description{
 A list of informative CpG islands to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 package. Use with data from Bisulphite Sequencing after processing with
-\code{\link[PAMES]{map_to_islands}}.
+\code{\link[PAMES]{reduce_to_regions}}.
 }
 \keyword{datasets}

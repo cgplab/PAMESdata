@@ -15,8 +15,8 @@ After gathering data from different samples (see <paper waiting for publication>
 for details) into a single matrix, CpG sites sets were created using
 \code{\link[PAMES]{select_informative_sites}}.
 To create CpG islands sets, the same matrixes were first remapped to CpG
-islands using \code{\link[PAMES]{map_to_islands}} and then processed with
-\code{\link[PAMES]{select_informative_islands}}.
+islands using \code{\link[PAMES]{reduce_to_regions}} and then processed with
+\code{\link[PAMES]{select_informative_regions}}.
 }
 \seealso{
 \url{https://github.com/cgplab/PAMES}

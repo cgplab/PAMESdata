@@ -11,6 +11,6 @@ PAAD_sites
 \description{
 A list of informative CpG sites to be used with \code{\link[PAMES]{compute_purity}} from PAMES
 package. Use with data from Illumina BeadChip.
-\code{\link[PAMES]{map_to_islands}}.
+\code{\link[PAMES]{reduce_to_regions}}.
 }
 \keyword{datasets}
