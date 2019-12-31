@@ -1,23 +1,28 @@
 library(dplyr)
-load("data-raw/cpg_islands_indexes.rda")
-all_sites <- readRDS("data-raw/cpg_sites.RDS")
+library(rlang)
+library(tibble)
+
+load("cpg_islands_indexes.rda")
+all_sites <- readRDS("cpg_sites.RDS")
 tumors <- sort(names(all_sites))
 tumor <- "BRCA"
 for (tumor in tumors){
     hyper_sites <- all_sites[[tumor]] %>%
+        tibble::rownames_to_column("probe") %>%
         dplyr::filter(type=="hyper" & n <= 10) %>%
-        dplyr::select(index) %>%
-        unlist(use.names=F)
+        dplyr::select(probe, index)
     hypo_sites <- all_sites[[tumor]] %>%
+        tibble::rownames_to_column("probe") %>%
         filter(type=="hypo" & n <= 10) %>%
-        select(index) %>%
-        unlist(use.names=F)
-    sites <- list(hyper=hyper_sites, hypo=hypo_sites)
+        select(probe, index)
+
+    sites <- list(hyper=set_names(hyper_sites$index, hyper_sites$probe),
+                  hypo=set_names(hypo_sites$index, hypo_sites$probe))
     assign(sprintf("%s_sites", tumor), sites)
 
     assign(sprintf("%s_islands", tumor), cpg_islands_indexes[[tumor]])
 }
-devtools::use_data(overwrite=T,
+usethis::use_data(overwrite=TRUE,
     BLCA_sites,
     BRCA_sites,
     COAD_sites,

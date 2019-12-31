@@ -1,8 +1,8 @@
 Package: PAMESdata
 Title: Precomputed lists of informative CpG sites and islands for PAMES package
-Date: 2019-12-12
+Date: 2019-12-31
 Description: Set of informative CpG sites and informative CpG islands from 14 cancer type from TCGA.
-Version: 1.5
+Version: 1.6
 Authors@R: c(person("Dario", "Romagnoli", email="dario.romagnoli87@gmail.com",
   role=c("aut", "cre")), person("Matteo", "Benelli", role="aut"))
 Depends: R (>= 3.5)
